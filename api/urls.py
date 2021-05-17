@@ -13,10 +13,14 @@ v1_router.register(r'posts/(?P<id>\d+)/comments', CommentViewSet,
 v1_router.register(r'follow', FollowViewSet, basename='Follow')
 v1_router.register(r'group', GroupViewSet, basename='Group')
 
-urlpatterns = [
+api_v1_urlpatterns = [
     path('token/', TokenObtainPairView.as_view(),
          name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(),
          name='token_refresh'),
     path('', include(v1_router.urls)),
+]
+
+urlpatterns = [
+    path('v1/', include(api_v1_urlpatterns))
 ]
