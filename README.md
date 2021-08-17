@@ -42,6 +42,7 @@ python manage.py runserver
 Примеры API запросов:
 
 1. Получить JWT-токен - http://127.0.0.1:8000/api/v1/token/
+
 POST request:
 
 ```
@@ -61,6 +62,7 @@ Response:
 ```
 
 2. Обновить JWT-токен - http://127.0.0.1:8000/api/v1/token/refresh/
+
 POST request:
 
 ```
@@ -78,6 +80,7 @@ Response:
 ```
 
 3. Получить список всех публикаций/Создать новую - http://127.0.0.1:8000/api/v1/posts/
+
 POST Request:
 
 ```
@@ -100,6 +103,7 @@ Response:
 ```
 
 4. Получить/обновить/удалить публикацию по id http://127.0.0.1:8000/api/v1/posts/{id}/
+
 PUT request:
 
 ```
