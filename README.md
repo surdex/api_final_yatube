@@ -39,9 +39,9 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Примеры API запросов:
+## Примеры API запросов:
 
-Получить JWT-токен - http://127.0.0.1:8000/api/v1/token/
+### Получить JWT-токен - http://127.0.0.1:8000/api/v1/token/
 
 POST request:
 
@@ -62,7 +62,7 @@ Response:
 ```
 
 
-Обновить JWT-токен - http://127.0.0.1:8000/api/v1/token/refresh/
+### Обновить JWT-токен - http://127.0.0.1:8000/api/v1/token/refresh/
 
 POST request:
 
@@ -81,7 +81,7 @@ Response:
 ```
 
 
-Получить список всех публикаций/Создать новую - http://127.0.0.1:8000/api/v1/posts/
+### Получить список всех публикаций/Создать новую - http://127.0.0.1:8000/api/v1/posts/
 
 POST Request:
 
@@ -105,7 +105,7 @@ Response:
 ```
 
 
-Получить/обновить/удалить публикацию по id http://127.0.0.1:8000/api/v1/posts/{id}/
+### Получить/обновить/удалить публикацию по id http://127.0.0.1:8000/api/v1/posts/{id}/
 
 PUT request:
 
